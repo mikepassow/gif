@@ -1,0 +1,17 @@
+body {
+    font: 18px arial, sans-serif;
+    background: #eeeeee;
+}
+button, 
+input[type="submit"] {
+    background: blue;
+    color: #ffffff;
+    border: 0;
+}
+button:hover,
+input[type="submit"]:hover {
+    background: blue;
+}
+button.active {
+    background: blue;
+}
