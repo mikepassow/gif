@@ -7,3 +7,4 @@ A webpage designed to generate your favorite athletes.
 <p> Type the athletes name in the textbox provided then click submit to generate a button with their name on it. </p>
 <p>Click that button or any button already listed to generate Gifs for that athlete. </p> 
 <p>Each Gif will come with a rating showing the preffered audience for that Gif. </p>
+<p>Click each Gif to start and click it one more time to stop it. </p>
