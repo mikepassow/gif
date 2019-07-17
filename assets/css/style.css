@@ -1,10 +1,7 @@
 body {
     font: 18px arial, sans-serif;
-    background: #eeeeee;
-    background: url("https://www.reviewjournal.com/wp-content/uploads/2019/01/hoops.jpg");
+    background-color: #7a3131;
     color: white;
-    background-size: 100%;
-    background-repeat: no-repeat;
     background-size: cover;
     
 }
@@ -22,5 +19,3 @@ input[type="submit"]:hover {
 button.active {
     background: blue;
 }
-
-

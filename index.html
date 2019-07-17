@@ -10,30 +10,37 @@
 </head>
 
 <body>
+    <!--Container for header and buttons-->
     <div class="container">
-        <h1 class="text-center">Sporty Giphy</h1>
-        <h3>Search for an athletes below!</h3>
+        <h1 class="text-center">Sport Giphy</h1>
+        <hr>
+        <h3>Search For Gifs Below!</h3>
         <br>
         <div id="athlete-buttons"> </div>
         <br>
         <br>
-        <div class="container">
+        </div>
+    
+        
+            <!--Textarea-->
             <form id="athlete-form">
                 <label id="add" for="athlete-input">Enter athlete name here:</label>
                 <input type="text" class="form-control" id="athlete-input">
                 <br>
                 <br>
+                <!--Submit Button-->
+                <button onclick="submitButtonClicked()" type="button" id="add-athlete" class="btn btn-success">Submit</button>
+                <br>
+                <br>
             </form>
-            <button onclick="submitButtonClicked()" type="button" id="add-athlete" class="btn btn-success">Submit</button>
-            <br>
-            <br>
-            <div id="athletes"> </div>
-
-                </div>
-
+                <!--Gifs-->
+            <div class="athletes">
             </div>
-        </div>
-    </div>
+            </div>
+        
+            
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="assets/javascript/app.js"></script>

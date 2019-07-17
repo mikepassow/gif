@@ -1,6 +1,6 @@
 
 
-var athletesArray = ["Michael Jordan ", "Trae Young ", "Jason Williams "];
+var athletesArray = ["Michael Jordan ", "Trae Young ", "Jason Williams"];
 
 $(document).ready(function() {
     for (var i = 0; i < athletesArray.length; i++) {
@@ -23,16 +23,18 @@ function submitButtonClicked() {
 
 function searchGif(gifName) {
     $.ajax({
-            url: 'https://api.giphy.com/v1/gifs/search?q= ' + gifName + ' &api_key=dc6zaTOxFJmzC',
+            url: 'https://api.giphy.com/v1/gifs/search?q= ' + gifName + ' &api_key=qka55riB8KMmw0s5mZnGfVJjMUBUlR10&limit=10',
             type: 'GET',
         })
         .done(function(response) {
             displayGif(response);
+            preventDefault();
+            
         })
 }
 
 function displayGif(response) {
-    $('#athletes').empty();
+    $('.athletes').empty();
     for (var i = 0; i < response.data.length; i++) {
         var rating = "<div class='ratings'> Rating:  " + (response.data[i].rating) + " </div>";
         var image = rating + '<img src= " ' + response.data[i].images.fixed_height_still.url +
@@ -40,7 +42,7 @@ function displayGif(response) {
             ' " data-animate=" ' + response.data[i].images.fixed_height.url + '" data-state="still" class="movImage" style= "width:250px; height:250px">';
 
         image = '<div class="col-md-12">' + image + "</div>";
-        $('#athletes').append(image);
+        $('.athletes').append(image);
     }
 
     $('.movImage').on('click', function() {
